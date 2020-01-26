@@ -22,7 +22,7 @@ Uncomment the `#disable_overscan=1` (Remove the #)
 Change `XKBLAYOUT="gb"` to `XKBLAYOUT="us"`
 
 ## 4. Install Airplay and make it enabled all the time
-[Link](https://appcodelabs.com/7-easy-steps-to-apple-airplay-on-raspberry-pi) \
+[Link](https://appcodelabs.com/7-easy-steps-to-apple-airplay-on-raspberry-pi) 
   1. Install Dependencies: \
 `sudo apt-get install autoconf automake avahi-daemon build-essential git libasound2-dev libavahi-client-dev libconfig-dev libdaemon-dev libpopt-dev libssl-dev libtool xmltoman`
   2. Build & Install shairport-sync \
@@ -31,7 +31,7 @@ Change `XKBLAYOUT="gb"` to `XKBLAYOUT="us"`
 		`autoreconf -i -f` \
 		`./configure --with-alsa --with-avahi --with-ssl=openssl --with-systemd --with-metadata` \
 		`make` \
-		`sudo make install` \
+		`sudo make install` 
   3. Test Airplay to the Raspberry Pi \
 		`sudo service shairport-sync start` \
 		`sudo systemctl status shairport-sync.service` \
@@ -41,7 +41,7 @@ Change `XKBLAYOUT="gb"` to `XKBLAYOUT="us"`
 
 ## 5. Enable Wifi to be on all the time to prevent wifi dropouts
 `sudo nano /etc/network/interfaces` \
-Go to the end of the file and add the lines:- \
+Go to the end of the file and add the lines:- 
 ``` 
 # Disable wifi power management
 wireless-power off
