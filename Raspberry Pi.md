@@ -46,3 +46,6 @@ Go to the end of the file and add the lines:-
 # Disable wifi power management
 wireless-power off
 ```
+## 6. Installing VLC Player
+
+`sudo apt-get install vlc`
